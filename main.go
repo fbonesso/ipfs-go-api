@@ -66,7 +66,7 @@ func main() {
   /*
   * Execute command on IPFS
   */
-  route.HandleFunc("/ipfs/execute/{command}", func(w http.ResponseWriter, r *http.Request) {
+  route.HandleFunc("/ipfs/run/{command}", func(w http.ResponseWriter, r *http.Request) {
     // CORS
     w.Header().Set("Access-Control-Allow-Origin", "localhost")
 
